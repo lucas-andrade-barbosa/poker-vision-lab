@@ -1,0 +1,12 @@
+ * Serving Flask app 'app'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://138.197.67.61:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:3.88.208.159 - - [02/Feb/2026 22:24:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:177.221.46.73 - - [02/Feb/2026 22:24:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:177.221.46.73 - - [02/Feb/2026 22:24:38] "[36mGET /style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:177.221.46.73 - - [02/Feb/2026 22:24:38] "GET /pokersolver.js HTTP/1.1" 200 -
+INFO:werkzeug:177.221.46.73 - - [02/Feb/2026 22:24:38] "GET /poker.js HTTP/1.1" 200 -

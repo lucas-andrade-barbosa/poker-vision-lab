@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Poker Vision Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Sua Mão</h2>
+        <div class="card-group" id="hand-slots">
+            <div class="card-slot" id="hand1" onclick="openCardSelector('hand1')">+</div>
+            <div class="card-slot" id="hand2" onclick="openCardSelector('hand2')">+</div>
+        </div>
+
+        <h2>Cartas da Mesa (Board)</h2>
+        <div class="card-group" id="board-slots">
+            <div class="card-slot" id="board1" onclick="openCardSelector('board1')">+</div>
+            <div class="card-slot" id="board2" onclick="openCardSelector('board2')">+</div>
+            <div class="card-slot" id="board3" onclick="openCardSelector('board3')">+</div>
+            <div class="card-slot" id="board4" onclick="openCardSelector('board4')">+</div>
+            <div class="card-slot" id="board5" onclick="openCardSelector('board5')">+</div>
+        </div>
+
+        <div class="opponents-selector">
+            <label for="num-opponents">Oponentes na Mesa:</label>
+            <input type="number" id="num-opponents" value="1" min="1" max="8">
+        </div>
+
+        <button id="evaluate-btn" onclick="evaluateHand()">Avaliar Mão</button>
+        
+        <div id="result-area">
+            <div id="hand-result"></div>
+            <div id="equity-result"></div>
+            <div id="suggestion-result"></div>
+        </div>
+    </div>
+
+    <!-- Modal de Seleção de Cartas -->
+    <div class="modal" id="card-selector-modal" onclick="closeCardSelector()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <h3>Selecione a Carta</h3>
+            <div class="selector-grid" id="suit-selector">
+                <button class="suit-h" onclick="selectSuit('h', '♥', this)">♥</button>
+                <button class="suit-d" onclick="selectSuit('d', '♦', this)">♦</button>
+                <button class="suit-s" onclick="selectSuit('s', '♠', this)">♠</button>
+                <button class="suit-c" onclick="selectSuit('c', '♣', this)">♣</button>
+            </div>
+            <div class="selector-grid" id="rank-selector">
+                <!-- Ranks serão inseridos pelo JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="pokersolver.js"></script>
+    <script src="poker.js"></script>
+</body>
+</html>
