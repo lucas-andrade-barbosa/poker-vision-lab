@@ -2,8 +2,6 @@
 
 Um assistente estratégico de poker Texas Hold'em em formato PWA (Progressive Web App), projetado com uma interface mobile-first e um backend Python robusto para cálculo de equity em tempo real.
 
-![Poker Vision Lab Screenshot](https://i.imgur.com/your-screenshot-url.png) <!-- Adicione um screenshot aqui depois -->
-
 ## Principais Funcionalidades
 
 - **Interface Visual Mobile-First:** Abandona campos de texto em favor de um seletor de cartas 100% visual e tátil, ideal para uso rápido em dispositivos móveis.
